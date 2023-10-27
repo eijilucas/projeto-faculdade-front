@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #101540;
+    font-weight: 600;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 700;
+    color: #101540;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #8F8F8F;
+    padding: 10px 10px;
+}
+
+body html {
+    max-width: 100vw;
+    max-height: 100vh;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.background-img img{
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.register-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 50px 20px 50px;
+}
+
+.register-head {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.register-head h1 {
+    color: #101540;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.register-head p {
+    font-size: 15px;
+    color: #101540;
+    font-weight: 700;
+}
+
+.register-head span {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.last {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.contact {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.phone {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.password {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.conditions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 12px;
+}
+
+.conditions input {
+    width: 24px;
+    height: 24px;
+}
+
+.first-condition {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.second-condition {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-btn button {
+    height: 60px;
+    width: 250px;
+    border-radius: 20px;
+    border: 1px solid #8F8F8F;
+    background: #101540;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.option {
+    display: flex;
+    gap: 4px;
+    margin-top: 20px;
+}
+
+@media(max-width: 1144px) {
+
+    * {
+        overflow: scroll;
+    }
+
+    .register-head {
+        text-align: center;
+    }
+
+    .background-img {
+        display: none;
+    }
+
+    .name {
+        flex-direction: column;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .password input {
+        max-width: 350px;
+    }
+
+    .form-container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    * {
+        overflow:scroll;
+    }
+
+    .first {
+        width: 100%;
+    }
+
+    .last {
+        width: 100%;
+    }
+
+    .email {
+        width: 100%;
+    }
+
+    .phone {
+        width: 100%;
+    }
+}

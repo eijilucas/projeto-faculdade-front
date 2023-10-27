@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+  <link rel="shortcut icon" href="/favicon/favicon.ico" />
+  <title>Cadastro</title>
+</head>
+
+<body>
+  <main class="container">
+    <div class="background-img">
+      <img src="../assets/background2.jpg" alt="background-img" />
+    </div>
+
+    <div class="register-content">
+      <div class="register-head">
+        <h1>Register</h1>
+
+        <div>
+          <p>Gerencie todo o seu estabelecimento</p>
+          <span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </span>
+        </div>
+      </div>
+
+      <form action="" method="POST" class="form-container">
+        <div class="name">
+          <div class="first">
+            <label for="firstName">Primeiro nome*</label>
+            <input type="text" name="firstName" id="firstName" placeholder="Digite seu primeiro nome" required />
+          </div>
+          <div class="last">
+            <label for="lastName">Sobrenome*</label>
+            <input type="text" name="lastName" id="lastName" placeholder="Digite seu sobrenome" required />
+          </div>
+        </div>
+
+        <div class="contact">
+          <div class="email">
+            <label for="email">Email*</label>
+            <input type="text" name="email" id="email" placeholder="exemplo@gmail.com" required />
+          </div>
+
+          <div class="phone">
+            <label for="phone">Telefone*</label>
+            <input type="tel" name="phone" id="phone" placeholder="(XX)XXXXX-XXXX" />
+          </div>
+        </div>
+
+        <div class="password">
+          <label for="password">Password*</label>
+          <input type="password" name="password" id="password" placeholder="Digite sua senha" required />
+        </div>
+
+
+        <div class="conditions">
+          <div class="first-condition">
+            <input type="checkbox" name="checkbox" id="checkbox" />
+            <span>Li e concordo com os <a href="">Termos de uso</a></span>
+          </div>
+
+          <div class="second-condition">
+            <input type="checkbox" name="checkbox" id="checkbox" />
+            <span>Li e concordo com a
+              <a href="">Política de privacidade</a></span>
+          </div>
+        </div>
+
+        <div class="form-btn">
+          <button type="submit">Inscrever-se</button>
+        </div>
+
+        <div class="option">
+          <p>Já tem uma conta?</p>
+          <a href="">Faça login</a>
+        </div>
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>
