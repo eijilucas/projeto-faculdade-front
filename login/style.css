@@ -124,8 +124,15 @@ form {
     font-weight: 500;
 }
 
-.login-btn button {
+.login-btn {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-btn button {
+    width: 60%;
     height: 60px;
     border-radius: 20px;
     border: 1px solid #8F8F8F;
@@ -159,11 +166,15 @@ form {
     align-items: center;
 }
 
+.background-img {
+    max-width: 60%;
+    height: 100%;
+}
+
 .background-img img{
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
+    background-position: center center;
 }
 
 @media(max-width: 768px) {
