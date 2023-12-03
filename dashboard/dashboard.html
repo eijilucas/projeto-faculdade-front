@@ -14,61 +14,118 @@
   <body>
     <main class="container">
       <header class="header">
-        <div class="header-menu">
-          <img src="../assets/svg/nav.svg" alt="" />
-        </div>
+        <div class="header-menu"></div>
 
         <div class="header-links">
-          <img src="../assets/svg/search.svg" alt="" />
-          <img src="../assets/svg/bell.svg" alt="" />
-
+          
+          <a href="/notifications/notification.html">
+            <img src="../assets/svg/bell.svg" alt="" />
+          </a>
+        
           <div class="header-profile">
             <div class="header-icon">
               <img src="../assets/svg/user.svg" alt="" />
             </div>
             <div class="header-text">
-              <span>Lucas Eiji</span>
-              <div class="header-dropdown">
-                <img src="../assets/svg/down.svg" alt="" />
-              </div>
+              <span>Usuário</span>
             </div>
           </div>
         </div>
       </header>
 
-      <section class="navigation">
-        <div class="navigation-links">
-          <div class="link">
-            <img src="../assets/svg/icon.svg" alt="" />
-            <a href="">
-              <span>Dashboard</span>
-            </a>
-          </div>
-
-          <div class="link">
-            <img src="../assets/svg/icon.svg" alt="" />
-            <a href="">
+      <section class="container-infos">
+        <section class="navigation">
+          <div class="navigation-links">
+            <a class="link" href="/products/products.html">
+              <img src="../assets/svg/icon.svg" alt="" />
               <span>Produtos</span>
             </a>
-          </div>
 
-          <div class="link">
-            <img src="../assets/svg/icon.svg" alt="" />
-            <a href="">
-              <span>Orders</span>
+            <a class="link" href="/orders/orders.html">
+              <img src="../assets/svg/icon.svg" alt="" />
+              <span>Pedidos</span>
+            </a>
+
+            <a class="link" href="/users/users.html">
+              <img src="../assets/svg/icon.svg" alt="" />
+              <span>Usuários</span>
+            </a>
+
+            <a class="link" href="/notifications/notification.html">
+              <img src="../assets/svg/icon.svg" alt="" />
+              <span>Notificações</span>
             </a>
           </div>
+        </section>
 
-          <div class="link">
-            <img src="../assets/svg/icon.svg" alt="" />
-            <a href="">
-              <span>Users</span>
-            </a>
+        <section class="infos">
+          <div class="tables">
+            <div class="orders">
+              <div class="orders-title">
+                <h1>Pedidos</h1>
+              </div>
+
+              <table>
+                <colgroup>
+                  <col style="width: 20%" />
+                  <col style="width: 25%" />
+                  <col style="width: 25%" />
+                  <col style="width: 25%" />
+                </colgroup>
+                <tr>
+                  <th>ID</th>
+                  <th>Cliente</th>
+                  <th>Data</th>
+                  <th>Status</th>
+                </tr>
+                <tr>
+                  <tbody id="order-table"></tbody>
+                </tr>
+              </table>
+            </div>
+
+            <div class="products">
+              <div class="product-title">
+                <h1>Produtos</h1>
+              </div>
+
+              <table>
+                <colgroup>
+                  <col style="width: 20%" />
+                  <col style="width: 25%" />
+                  <col style="width: 25%" />
+                  <col style="width: 25%" />
+                </colgroup>
+                <tr>
+                  <th>ID</th>
+                  <th>Nome</th>
+                  <th>Validade</th>
+                  <th>Preço</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Queijo</td>
+                  <td>24/01/2024</td>
+                  <td>R$49,99</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Presunto</td>
+                  <td>19/01/2024</td>
+                  <td>R$29,99</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Mortadela</td>
+                  <td>26/01/2024</td>
+                  <td>R$23,90</td>
+                </tr>
+              </table>
+            </div>
           </div>
-        </div>
+        </section>
       </section>
-
-      
     </main>
+    <script src="dashboard.js"></script>
   </body>
 </html>

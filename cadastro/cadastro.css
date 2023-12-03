@@ -122,6 +122,24 @@ body html {
     flex-direction: column;
     margin-top: 20px;
     width: 100%;
+    gap: 10px;
+}
+
+.pass {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.pass input[type="password"] img {
+    position: absolute;
+    right: 2px;
+}
+
+.confirm-pass {
+    display: flex;
+    flex-direction: column;
 }
 
 .conditions {

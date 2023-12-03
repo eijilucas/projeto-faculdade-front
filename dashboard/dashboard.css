@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins';
+    overflow: hidden;
 }
 
 a {
@@ -29,7 +30,8 @@ body html {
 
 .header-links {
     display: flex;
-    gap: 15px;
+    align-items: center;
+    gap: 5px;
 }
 
 .header-profile {
@@ -69,12 +71,13 @@ body html {
     align-items: center;
     gap: 15px;
     padding: 0px 10px;
+    width: 100%;
 }
 
 .link {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -82,4 +85,69 @@ body html {
 .link span {
     color: #fff;
     font-size: 12px;
+}
+
+.container-infos {
+    display: flex;
+}
+
+.infos {
+    width: 100vw;
+    height: 93vh;
+    background: #CBCBCB;
+    padding: 25px;
+}
+
+.tables {
+    display: flex;
+    gap: 25px;
+}
+
+.orders {
+    width: 50%;
+    height: 50%;
+    background: #fff;
+    border: 1px solid #8F8F8F;
+    border-radius: 10px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.orders-title {
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+}
+
+table {
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 100%;
+    border-collapse: collapse;
+    padding-right: 15px;
+    
+}
+
+th, td {
+    border: none;
+    text-align: center;
+    padding: 5px;
+}
+
+.products {
+    width: 50%;
+    height: 50%;
+    background: #fff;
+    border: 1px solid #8F8F8F;
+    border-radius: 10px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-title {
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
 }

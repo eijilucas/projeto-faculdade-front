@@ -1,0 +1,5 @@
+[
+    {"id": 1, "name": "Presunto", "validade": "30/11/2023", "preco": "R$29,90"},
+    {"id": 2, "name": "Mortadela", "validade": "20/11/2023", "preco": "R$23,90"},
+    {"id": 3, "name": "Queijo", "validade": "28/11/2023", "preco": "R$49,90"}  
+]
