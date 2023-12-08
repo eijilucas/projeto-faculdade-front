@@ -25,10 +25,10 @@ function validarSenhas() {
 
 function submitData() {
     const data = coletarDados();
-    const API_URL = ""
+    const API_URL = "http://localhost:8080/collaborators"
     console.log(data.phone)
 
-    if(validarSenhas === true) {
+    if(validarSenhas() === true) {
         fetch(API_URL, {
             method: 'POST',
             headers: {
