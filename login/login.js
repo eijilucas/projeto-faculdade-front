@@ -1,14 +1,18 @@
 formSubmit = document.getElementById('form')
-emailInput = document.getElementById('email').value;
-passwordInput = document.getElementById('password').value;
+emailInput = document.getElementById('email');
+passwordInput = document.getElementById('password');
+const apiUrl = 'http://localhost:8080/collaborators'; 
 
 formSubmit.addEventListener('submit', (e) => {
     e.preventDefault();
-    obterDados()
+    validarDados();
 });
 
+window.onload = () => {
+  obterDados();
+}
+
 async function obterDados() {
-    const apiUrl = 'http://localhost:8080/collaborators'; // Substitua pela sua URL real
   
     try {
       const resposta = await fetch(apiUrl);
@@ -18,7 +22,7 @@ async function obterDados() {
       }
   
       const dados = await resposta.json();
-      console.log('Dados obtidos:', dados);
+      console.log(dados);
       return dados;
 
     } catch (erro) {
@@ -27,17 +31,21 @@ async function obterDados() {
 
 }
   
-function validarDados() {
-    const data = obterDados();
+async function validarDados() {
+  try {
+    const dados = await obterDados();
 
-    for(let i = 0; i < data.lenght; i++) {
-        const usuarios = data[i];
+    const usuarioEncontrado = dados.find(usuario => usuario.email === emailInput.value && usuario.password === passwordInput.value);
 
-        if(usuarios.email === emailInput && usuarios.password === passwordInput) {
-            window.location.href = 'dashboard.html';
-            return;
-        }
+    if (usuarioEncontrado) {
+      window.location.href = "../dashboard/dashboard.html";
+    } else {
+      window.alert("Credenciais incorretas");
     }
 
-    window.alert('Credenciais inválidas');
+  } catch (erro) {
+    console.error('Erro ao validar dados:', erro.message);
+  }
 }
+
+
