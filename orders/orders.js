@@ -10,11 +10,13 @@ fetch("http://localhost:8080/orders")
         const costumerId = row.insertCell(1);
         const data = row.insertCell(2);
         const status = row.insertCell(3);
+        const total = row.insertCell(4);
 
         orderId.textContent = order.orderId;
         costumerId.textContent = order.costumerName.name;
         data.textContent = order.registrationTime;
         status.textContent = order.orderStatus;
+        total.textContent = order.total;
     })
 })
 .catch(err => {
