@@ -108,13 +108,7 @@ body html {
 .email {
     display: flex;
     flex-direction: column;
-    width: 50%;
-}
-
-.phone {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+    width: 100%;
 }
 
 .password {
