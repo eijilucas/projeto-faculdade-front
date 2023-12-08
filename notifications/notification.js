@@ -1,5 +1,11 @@
 const API_URL = 'http://localhost:8080/products'
 
+window.onload = (e) => {
+    e.preventDefault();
+    obterDados();
+    validarProdutos();
+}
+
 async function obterDados() {
     try {
       const resposta = await fetch(API_URL);
@@ -21,9 +27,9 @@ async function validarProdutos() {
     const avisoVencimento = 15;
     const produtos = obterDados();
 
-    estoque = produtos.quantity.value;
+    estoque = produtos.quantity;
     minEstoque = 10;
-    validade = new Date(produtos.expirationDate.toDateString());
+    validade = new Date(produtos.expirationDate);
     var span = document.createElement('span');
     var lista = document.getElementById('lista');
 
@@ -31,6 +37,8 @@ async function validarProdutos() {
         span.textContent = "Produto com o id: " + produtos.id + "está com vencimento igual ou menor a 15 dias!";
     } else if (estoque <= minEstoque) {
         span.textContent = "Produto com o id: " + produtos.id + "está com baixo estoque!";
+    } else {
+        span.textContent = "Sem problemas no momento!";
     }
 
     lista.appendChild(span);
