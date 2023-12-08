@@ -1,5 +1,0 @@
-[
-    {"id": 1, "costumer": "Lucas", "date": "19/11/2023", "status": "Delivered"},
-    {"id": 2, "costumer": "Jhonathan", "date": "20/11/2023", "status": "Paid"},
-    {"id": 3, "costumer": "Diogo", "date": "28/11/2023", "status": "Waiting"}  
-]
