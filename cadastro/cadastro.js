@@ -53,18 +53,12 @@ function submitData() {
 }
 
 function coletarDados() {
-    firstName = firstNameInput.value;
-    lastName = lastNameInput.value;
     email = emailInput.value;
-    phone = phoneInput.value;
     password = passwordInput.value;
 
     return {
         id: null,
-        firstName: firstName,
-        lastName: lastName,
         email: email,
-        phone: phone,
         password: password
     }
 }
