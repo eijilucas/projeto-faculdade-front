@@ -1,5 +1,4 @@
 const API_URL = "http://localhost:8080/collaborators"
-console.log(API_URL)
 
 fetch(API_URL)
 .then(response => response.json())
