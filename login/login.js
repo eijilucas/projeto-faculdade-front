@@ -19,6 +19,7 @@ async function obterDados() {
   
       const dados = await resposta.json();
       console.log('Dados obtidos:', dados);
+      return dados;
 
     } catch (erro) {
       console.error('Erro geral:', erro.message);
