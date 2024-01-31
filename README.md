@@ -15,8 +15,10 @@ Front end do projeto de conclusão de curso
 ```bash
 # clonar repositório
 git clone https://github.com/eijilucas/projeto-faculdade-front
+
 # localiza a pasta
 cd projeto-faculdade-front
+
 # executa o projeto
 npm run dev / live server vscode extension
 ```
